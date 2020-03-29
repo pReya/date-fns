@@ -71,7 +71,7 @@ var dayPeriodValues = {
   }
 }
 
-function isFeminine(unit) {
+function isFeminine(unit): boolean {
   return (
     unit === 'year' || unit === 'week' || unit === 'minute' || unit === 'second'
   )

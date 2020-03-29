@@ -36,7 +36,7 @@ import requiredArgs from '../_lib/requiredArgs/index.js'
  * )
  * //=> 0
  */
-export default function differenceInDays(dirtyDateLeft, dirtyDateRight) {
+export default function differenceInDays(dirtyDateLeft: Date | number, dirtyDateRight: Date | number): number {
   requiredArgs(2, arguments)
 
   var dateLeft = toDate(dirtyDateLeft)
